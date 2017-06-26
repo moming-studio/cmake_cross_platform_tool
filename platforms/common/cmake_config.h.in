@@ -1,0 +1,52 @@
+#ifndef CMAKE_CONFIG_H
+#define CMAKE_CONFIG_H
+
+//----------------code version----------------
+#define VERSION_GIT "@VERSION_GIT@"
+
+//----------------build type----------------
+#cmakedefine DEBUG
+#cmakedefine RELEASE
+#define BUILD_INFO "@BUILD_INFO@"
+
+
+//----------------platform info----------------
+#define PLATFORM "@PLATFORM@"
+
+//----------------win32 info----------------
+#cmakedefine WIN32
+#cmakedefine WIN32_X86
+#cmakedefine WIN32_X64
+#define WIN32_ABI "@WIN32_ABI@"
+
+//----------------linux info----------------
+#cmakedefine LINUX
+#cmakedefine LINUX_X86
+#cmakedefine LINUX_X64
+#define LINUX_ABI "@LINUX_ABI@"
+
+//----------------mac osx info----------------
+#cmakedefine OSX
+#cmakedefine OSX_X86
+#cmakedefine OSX_X64
+#define OSX_ABI "@OSX_ABI@"
+
+//----------------ios info----------------
+#cmakedefine IOS
+#cmakedefine IOS_ARM7
+#cmakedefine IOS_ARMV7S
+#cmakedefine IOS_ARM64_V8A
+#define IOS_ABI "@IOS_ARCH@"
+
+//----------------android info----------------
+#cmakedefine ANDROID
+#cmakedefine ANDROID_ARMV5
+#cmakedefine ANDROID_ARMV7_NEON
+#cmakedefine ANDROID_ARM64_V8A
+#cmakedefine ANDROID_X86
+#cmakedefine ANDROID_X64
+#cmakedefine ANDROID_MIPS
+#cmakedefine ANDROID_MIPS64
+#define ANDROID_ABI "@ANDROID_ABI@"
+
+#endif //CMAKE_CONFIG_H

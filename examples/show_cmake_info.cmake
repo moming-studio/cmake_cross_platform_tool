@@ -1,0 +1,42 @@
+#打印关键信息
+message(STATUS "----------in show_cmake_info.cmake,print key info start--------------")
+
+#目标系统名
+message(STATUS "CMAKE_SYSTEM_NAME:${CMAKE_SYSTEM_NAME}")
+message(STATUS "CMAKE_HOST_SYSTEM_NAME:${CMAKE_HOST_SYSTEM_NAME}")
+message(STATUS "CMAKE_BUILD_TYPE:${CMAKE_BUILD_TYPE}")
+message(STATUS "CMAKE_SOURCE_DIR:${CMAKE_SOURCE_DIR}")
+message(STATUS "CMAKE_BINARY_DIR:${CMAKE_BINARY_DIR}")
+message(STATUS "PROJECT_SOURCE_DIR:${PROJECT_SOURCE_DIR}")
+message(STATUS "PROJECT_BINARY_DIR:${PROJECT_BINARY_DIR}")
+
+message(STATUS "CMAKE_CURRENT_LIST_DIR:${CMAKE_CURRENT_LIST_DIR}")
+message(STATUS "CMAKE_CURRENT_LIST_FILE:${CMAKE_CURRENT_LIST_FILE}")
+message(STATUS "CMAKE_CURRENT_SOURCE_DIR:${CMAKE_CURRENT_SOURCE_DIR}")
+message(STATUS "CMAKE_CURRENT_BINARY_DIR:${CMAKE_CURRENT_BINARY_DIR}")
+
+#安装目录
+message(STATUS "CMAKE_INSTALL_PREFIX:${CMAKE_INSTALL_PREFIX}")
+
+#ios的信息
+message(STATUS "IOS:${IOS}")
+message(STATUS "IOS_ARCH:${IOS_ARCH}")
+
+#android的信息
+message(STATUS "ANDROID:${ANDROID}")
+message(STATUS "ANDROID_ABI:${ANDROID_ABI}")
+
+#windows的信息
+message(STATUS "WIN32:${WIN32}")
+message(STATUS "WIN32_ABI:${WIN32_ABI}")
+
+#linux的信息
+message(STATUS "LINUX:${LINUX}")
+message(STATUS "LINUX_ABI:${LINUX_ABI}")
+
+#osx的信息
+message(STATUS "OSX:${OSX}")
+message(STATUS "OSX_ABI:${OSX_ABI}")
+
+message(STATUS "CMAKE_INSTALL_CONFIG_NAME:${CMAKE_INSTALL_CONFIG_NAME}")
+message(STATUS "----------in show_cmake_info.cmake,print key info end--------------")
